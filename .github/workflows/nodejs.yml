@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install markdown-to-slides -g
-    - run: markdown-to-slides -d README.md -o gitSeminar.html
+    - run: markdown-to-slides -d README.md -o docs/gitSeminar.html
     - run: git config --global user.email "john.french@gmit.ie"
     - run: git config --global user.name "John French"
     - run: git add gitSeminar.html
