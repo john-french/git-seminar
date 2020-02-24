@@ -21,7 +21,7 @@ jobs:
     - run: markdown-to-slides -d README.md -o docs/slides.html
     - run: git config --global user.email "john.french@gmit.ie"
     - run: git config --global user.name "John French"
-    - run: git add gitSeminar.html
+    - run: git add docs/slides.html
     - run: git commit -m "rendered slides"  
     - run: git push
       env:
